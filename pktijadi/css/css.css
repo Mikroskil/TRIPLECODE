@@ -1,0 +1,388 @@
+
+/* CSS for All the Menus START */
+ul.ws_css_cb_menu { 
+/*	background-image:url('http://www.wittysparks.com/wp-content/themes/wp-max/images/menu_bg.gif');
+	*/
+	background-position:top left;
+	width:702px;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	display:block;
+	float: left;
+	height:34px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px; float:right;
+}
+ul.ws_css_cb_menu li {
+	display:block;
+	margin:2px 0px 0px 2px;
+	float:left;
+}
+ul.ws_css_cb_menu a:hover ul, ul.ws_css_cb_menu a:hover a:hover ul, ul.ws_css_cb_menu a:hover a:hover a:hover ul {
+	display:block;
+}
+ul.ws_css_cb_menu a {
+	display:block;
+	vertical-align:middle;
+	border-width:0px;
+	border-color:#6655ff;
+	border-style:solid;
+	padding:2px;
+	_padding-left:0;
+	color: #444444;
+	text-decoration:none;
+	text-align:left;
+}
+ul.ws_css_cb_menu span {
+	overflow:hidden;
+}
+ul.ws_css_cb_menu li a:hover, ul.ws_css_cb_menu li a {
+	padding:9px;
+	color:#763319
+}
+ul.ws_css_cb_menum li a:hover, ul.ws_css_cb_menum li a {
+	padding:4px;
+	font-weight: normal;
+	color: #000
+}
+ul.ws_css_cb_menu ul {
+	position: absolute;
+	left:-1px;
+	top:98%;
+	width:160.65px;
+	border-left:1px solid #d5a000;
+	border-bottom:3px solid #d5a000;
+	border-right:3px solid #d5a000;
+	border-top:0px;
+	background-color:#ffffff;
+}
+ul.ws_css_cb_menu ul ul {
+	position: absolute;
+	left:98%;
+	top:-2px;
+}
+ul.ws_css_cb_menu, ul.ws_css_cb_menu ul {
+	margin:0px;
+	list-style:none;
+	padding:0px 2px 2px 0px;
+}
+ul.ws_css_cb_menu a:active, ul.ws_css_cb_menu a:focus {
+	outline-style:none;
+}
+ul.ws_css_cb_menu ul li {
+	float: left;
+	width: 130px;
+}
+ul.ws_css_cb_menu ul a {
+	white-space:nowrap;
+	text-align:left;
+}
+ul.ws_css_cb_menu li:hover {
+	position:relative;
+}
+ul.ws_css_cb_menu li:hover>a {
+	background-color:#fff;
+	color: #000;
+	border-color:#665500;
+	border-style:solid;
+	text-decoration:none;
+}
+ul.ws_css_cb_menu li a:hover {
+	position:relative;
+	background:#FFCC66;
+	color: #000;
+	text-decoration:none;
+	border-color:#665500;
+	border-style:solid;
+}
+ul.ws_css_cb_menum li a:hover {
+	background-color: #ffc000;
+}
+ul.ws_css_cb_menu img {
+	border: none;
+	float:left;
+	margin-right:4px;
+	width:16px;
+	height:16px;
+}
+ul.ws_css_cb_menu ul img {
+	width:16px;
+	height:16px;
+}
+ul.ws_css_cb_menu ul, ul.ws_css_cb_menu a:hover ul ul {
+	display:none;
+	z-index:99999;
+}
+ul.ws_css_cb_menu li:hover>ul {
+	display:block
+}
+ul.ws_css_cb_menu span {
+	display:block;
+	padding-right:11px;
+	/*background-image:url('http://www.wittysparks.com/wp-content/themes/wp-max/images/arrow_down.gif');
+	*/background-position:right center;
+	background-repeat: no-repeat;
+}
+* { padding: 0; margin: 0; }
+
+body {
+	font:"Arial Black", Gadget, sans-serif
+	font-size: 16px;
+	background: #eff;
+}
+
+#wrapper { 
+	 margin: 0 auto;
+ 	 width: 902px;
+
+}
+
+#header {
+ 	color: #333;
+ 	width: 902px;
+ 	padding: 10px;
+ 	height: 60px;
+ 	margin: 10px 0px 10px 0px;
+ 	background: #FFCC66;
+
+}
+#headerleft{
+	float:left;
+	width:902;
+
+}
+
+#headerright{
+	float:right;
+	margin-right:300px;
+ }
+ #navigasi {
+	 margin:68px 0px 0px 15px;
+	 width:902px;
+	 
+
+}
+
+#navigasi li {
+	float:left;
+    list-style: none;
+    margin-left: 9px;
+    margin-right: 9px;
+	font-weight:bold;
+}
+ 
+/* #navigationnnn{ 
+ 	float: down;
+ 	padding:10px;
+ 	color: #333;
+ 	margin: 10px ;
+ 	width: 802px;
+ 	display: inline;
+ }*/
+ #faux {
+
+ 	margin-bottom: 5px;
+ 	overflow: auto;
+	height:500px;
+	width:920px;
+	background:#CC9;
+
+}
+#fauxregister{
+	background:#eff;
+}
+#leftcolumn { 
+ display: inline;
+ color: #333;
+ margin: 10px;
+ padding: 0px;
+ width: 250px;
+ float: left;
+}
+#rightcolumn {
+ color: #333;
+ padding: 13px;
+ width:652px;
+ display: inline;
+ position: relative;
+ }
+
+.tampilproduk {
+	margin-left:265px;
+}
+
+#detailproduk {
+	float:left;
+	width:250px;
+	margin-left:18px;
+	padding:10px;
+}
+
+#detailproduk1 {
+	margin-left:100px;
+	padding:10px;
+
+}
+#info{
+	font-size:16px;
+	margin-top:50px;
+	margin-left:280px;
+}
+#forum1{
+	margin-top:10px;
+	margin-left:270px;
+}
+#forum2{
+	margin-top:10px;
+	margin-left:270px;
+}
+#register{
+	margin-top:70px;
+	margin-left:270px;
+}
+#buku_tamu{
+	margin-left:270px;
+}
+#buku_tamu1{
+margin-left:270px;
+margin-top:20px;
+width:400px;
+height:400px;
+padding:15px 20px 14px;
+box-shadow:0px 0px 3px #888;
+}
+
+
+
+
+
+/* CSS TAMPIL PRODUK TERBARU */
+
+.tampilproduk img{
+width:80px;
+margin-bottom:5px;
+height:90px;
+box-shadow:1px 1px 2px #ccc;
+-webkit-box-shadow:1px 1px 2px #ccc;
+-moz-border-radius:5px;
+border-radius:5px;
+}
+.tampilproduk table{
+margin-top:30px;
+margin-bottom:5px;
+background:#fff;
+border-radius:10px;
+float:center;
+box-shadow:0px 0px 3px #bbb;
+-moz-border-radius:10px;
+-moz-box-shadow:0px 0px 3px #bbb;
+padding-bottom:30px;
+}
+.tampilproduk td{
+font-family:verdana;
+font-size:11px;
+color:#666;
+
+}
+.tampilproduk th{
+color:orange;
+font-family:verdana;
+font-size:14px;
+padding-top:20px;
+padding-bottom:20px;
+}
+.tampilproduk a{
+text-decoration:none;
+color:blue;
+}
+.tampilproduk a:hover{
+text-decoration:underline;
+color:red;
+}
+
+
+#footer {
+	text-align:center;
+	font-size:13px; 
+ width: 902px;
+ height:20px;
+ clear: both;
+ color: #333;
+ background: #FFCC66;
+ padding: 10px;
+}
+.clear { clear: both; background: none; }
+
+* {margin: 0; padding: 0;}
+
+
+
+/*.clear { clear: both; background: none; }
+
+* {margin: 0; padding: 0;}
+
+/*
+
+.navigation {
+	margin-left: 30px ;
+	background: #fff;
+	overflow: hidden;
+	width: 600px;
+	float:right;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navigation li {
+	width: 120px; border-left: 5px solid #666;
+	float: left;
+	cursor: pointer;
+	list-style-type: none;
+	
+	padding: 10px 10px 10px 15px;
+	
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+.navigation li h2 {
+	font-family: georgia;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 14px;
+	margin-bottom: 5px;
+	line-height: 16px;
+}
+
+.navigation li p{
+	font-size: 11px;
+	color: #999;
+	
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+}
+
+.navigation li:hover {
+	background: #333;
+	border-left: 5px solid #000;
+}
+
+.navigation li:hover h2 {
+	font-weight: bold;
+	color: #fff;
+}
+
+.navigation li:hover p {
+	color: #ccc;
+	padding-left: 5px;
+}

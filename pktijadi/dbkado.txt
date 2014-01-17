@@ -1,0 +1,110 @@
+-- phpMyAdmin SQL Dump
+-- version 3.4.5
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Jan 16, 2014 at 11:12 PM
+-- Server version: 5.5.16
+-- PHP Version: 5.3.8
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `dbkado`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_forum`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_forum` (
+  `no` int(11) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `pesan` varchar(200) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `tanggal` datetime NOT NULL,
+  PRIMARY KEY (`no`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_produk`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_produk` (
+  `id` int(5) NOT NULL,
+  `nama_produk` varchar(30) NOT NULL,
+  `harga` int(10) NOT NULL,
+  `keterangan` text NOT NULL,
+  `gambar` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_produk`
+--
+
+INSERT INTO `tb_produk` (`id`, `nama_produk`, `harga`, `keterangan`, `gambar`) VALUES
+(0, '', 0, '', ''),
+(1, 'Beautifull Coy', 70000, 'qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq', 'kado (1).jpg'),
+(2, 'butter fly', 120000, 'qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq', 'kado (2).jpg'),
+(3, 'Cosy men', 80000, 'qqqqqqqqqqqqqqqqqqqqqqqq', 'kado (3).jpg'),
+(4, 'Sasha Sweet', 300000, 'qqqqqqqqqqqqqqqqq', 'kado (4).jpg'),
+(5, 'CJ Junioer', 400000, 'qqqqqqqqqqqqqqqqqqqqqqqqqq', 'kado (5).jpg'),
+(6, 'Barca', 90000, 'qqqqqqqqqqqqqqqqqqqqqqqq', 'kado (6).jpg'),
+(7, 'Couci', 20000, 'qqqqqqqqqqqq', 'kado(7).jpg'),
+(8, 'Foxmise', 50000, 'qqqqqqqqqqqqqqqqqqqqqqqqqqqqq', 'kado(8).jpg'),
+(9, 'Happysun', 60000, 'qqqqqqqqqqqqqqqqqqqqqqqq', 'kado(9).jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_user`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_user` (
+  `user_name` varchar(30) NOT NULL,
+  `alamat` text NOT NULL,
+  `jenis_kelamin` varchar(20) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  PRIMARY KEY (`user_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_user`
+--
+
+INSERT INTO `tb_user` (`user_name`, `alamat`, `jenis_kelamin`, `email`, `password`) VALUES
+('', '', '', '', ''),
+('abdi', 'pancing', 'Laki-Laki', 'abdisyukur7@gmail.com', '123');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `td_pemesan`
+--
+
+CREATE TABLE IF NOT EXISTS `td_pemesan` (
+  `id_pemesan` int(5) NOT NULL,
+  `user_name` varchar(30) NOT NULL,
+  `alamat` text NOT NULL,
+  `alamat_tujuan` text,
+  `tanggal` date NOT NULL,
+  `gambarpesanan` varchar(20) NOT NULL,
+  PRIMARY KEY (`id_pemesan`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
