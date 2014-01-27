@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Faux Column CSS Layouts - 2 Column - faux-1-2-col</title>
+<link rel="stylesheet" type="text/css" href="../css/css.css" />
+<script type="text/javascript">
+		var imgFile = ["../img/kado2.jpg","../img/kado3.jpg","../img/kado4.jpg","../img/kado5.jpg","../img/kado6.jpg"];
+		var img
+		var i=0;
+		var t;
+			
+		function startAnimasi()
+		{
+			var x = document.getElementById("animasi");
+			x.src = imgFile[i];
+			i++;
+			if(i>imgFile.length-1) i=0;
+			t = setTimeout("startAnimasi()",2500);
+		}
+		function stopAnimasi()
+		{
+			clearTimeout(t);
+		}
+		
+	</script>
+</head>
+
+<body onload="startAnimasi()">
+
+   <!-- Begin Wrapper -->
+   <div id="wrapper">
+   	<?php
+	include ("../php/include/nav.php");
+
+	?>
+         <!-- Begin Faux Columns -->
+		 <div id="faux">
+		 
+		       <!-- Begin Left Column -->
+		       <div id="leftcolumn" >
+                
+				     
+		       </div>
+		       <!-- End Left Column -->
+		 
+		       <!-- Begin Right Column -->
+		       <div id="rightcolumn">
+               <img src="../img/kado1.jpg"  id="animasi" onmouseover="stopAnimasi()" onmouseout="startAnimasi()" width="170" height="170">
+               <img src="../img/kado2.jpg"  id="animasi" onmouseover="stopAnimasi()" onmouseout="startAnimasi()" width="170" height="170">
+               <img src="../img/kado6.jpg"  id="animasi" onmouseover="stopAnimasi()" onmouseout="startAnimasi()" width="170" height="170">
+		           <h2>HAPPY FAMLY !!</h2>
+		           <br />
+		           Berikan kepercayaan kepada kami untuk membantu keluarga anda. <br />
+  <br />
+		           Disini kami menyediakan berbagai jenis produk kado seperti cincin, boneka, jam tangan dengan berbagai bentuk desain, warna kertas dan aksesoris. kami dapat menyediakan kado sesuai selera para pengunjug semua. kami menyediakan fitur dimana para pelanggan dapat menentukan bentuk desain, isi, warna dan aksesoris.<br /><br />    
+  <div class="clear"></div>
+  <img src="../../PKTI/gbrr.png" />--------<img src="../../PKTI/bca.jpg" /><img src="../../PKTI/bni.jpg" /><img src="../../PKTI/bri.jpg" />--------
+	             </div>
+		       
+		       <!-- End Right Column -->
+			   
+		   <div class="clear"></div>
+			   
+         </div>	   
+         <!-- End Faux Columns --> 
+
+         <!-- Begin Footer -->
+         <div id="footer">
+		       
+                Copy Right:hhtp//KADO.com 2014	
+
+         </div>
+		 <!-- End Footer -->
+	</div>
+        
+   <!-- End Wrapper -->
+</body>
+</html>
